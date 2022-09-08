@@ -33,10 +33,10 @@ class Student {
 
         return (MinAge) => {
             if (this.Mark > MinMark && this.Age > MinAge) {
-                console.log(true)
+                console.log(`${this.Name} is Eligible for Placement`)
             }
             else {
-                console.log(false)
+                console.log(`${this.Name} is Not Eligible for Placement`)
             }
         }
 
@@ -50,4 +50,8 @@ let Avesh = new Student("Avesh", 22, 698356237, 3, 42);
 let Saini = new Student("Saini", 22, 893945237, 4, 24);
 let kumar = new Student("Kumar", 21, 798487644, 5, 37);
 
+ramya.EligibleForPlacement(40)(21)
 priya.EligibleForPlacement(40)(21)
+Avesh.EligibleForPlacement(40)(21)
+Saini.EligibleForPlacement(40)(21)
+kumar.EligibleForPlacement(40)(21)
